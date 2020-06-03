@@ -4,7 +4,9 @@
 
 lctree provides a CLI and Golang primitives to serialize and deserialize [LeetCode binary trees](https://support.leetcode.com/hc/en-us/articles/360011883654-What-does-1-null-2-3-mean-in-binary-tree-representation) (e.g. "[5,4,7,3,null,2,null,-1,null,9]").
 
-[Overview](#overview)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributing](#contributing)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[![API reference](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/github.com/sbourlon/go-lctree?tab=doc)
+[Overview](#overview)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributing](#contributing)&nbsp;&nbsp;&nbsp;
+
+[![API reference](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/github.com/sbourlon/go-lctree?tab=doc) [![Go Report Card](https://goreportcard.com/badge/github.com/sbourlon/go-lctree)](https://goreportcard.com/report/github.com/sbourlon/go-lctree) [![Coverage Status](https://coveralls.io/repos/github/sbourlon/go-lctree/badge.svg?branch=master)](https://coveralls.io/github/sbourlon/go-lctree?branch=master)
 
 </div>
 
