@@ -1,12 +1,19 @@
+<div align="center">
+
 # lctree :seedling:
 
-lctree provides primitives to serialize and deserialize [LeetCode binary trees](https://support.leetcode.com/hc/en-us/articles/360011883654-What-does-1-null-2-3-mean-in-binary-tree-representation) (e.g. "[5,4,7,3,null,2,null,-1,null,9]").
+lctree provides a CLI and Golang primitives to serialize and deserialize [LeetCode binary trees](https://support.leetcode.com/hc/en-us/articles/360011883654-What-does-1-null-2-3-mean-in-binary-tree-representation) (e.g. "[5,4,7,3,null,2,null,-1,null,9]").
+
+[Overview](#overview)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributing](#contributing)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[![API reference](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/github.com/sbourlon/go-lctree?tab=doc)
+
+</div>
 
 ## Overview
 - Deserialize/Serialize
 - Walk Depth-First
 - Walk Breadth-First
 - Convert to [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) for visualization
+- CLI (see [bin/](bin/))
 
 ## Getting Started
 ### Deserialize
@@ -148,7 +155,7 @@ import (
 type TreeNode = lctree.TreeNode
 
 func mySolution() *TreeNode {
-	return lctree.Deserialize("[1,2,3]")
+	return lctree.Deserialize("[10,5,15,null,null,6,20]")
 }
 
 func main() {
@@ -160,11 +167,15 @@ Output:
 ```dot
 digraph {
 graph [ordering="out"];
-1;
-2;
-3;
-1 -> 2;
-1 -> 3;
+10;
+5;
+15;
+6;
+20;
+10 -> 5;
+10 -> 15;
+15 -> 6;
+15 -> 20;
 }
 ```
 
@@ -172,6 +183,9 @@ then convert into a png picture (e.g. tree.png):
 ```
 $ dot -Tpng -o tree.png tree.dot
 ```
+Output:
+
+![tree.png](img/tree.png "Tree PNG image from DOT")
 
 ## Contributing
 Pull-requests, feature requests and issues are welcome.
